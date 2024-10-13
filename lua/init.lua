@@ -1,7 +1,5 @@
 require("lazyinit")
 
-vim.cmd([[colorscheme tokyonight-storm]])
-
 -- configure the used language server
 require'lspconfig'.pylsp.setup{}
 
@@ -33,7 +31,6 @@ require'lspconfig'.sqls.setup{
 }
 
 require("fjes")
-require("fjes.colors")
 
 MyColorScheme("tokyonight-moon")
 

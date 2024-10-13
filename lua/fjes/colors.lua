@@ -9,3 +9,5 @@ function MyColorScheme(color)
     vim.api.nvim_set_hl(0, "Nomral", { bg = "none" })
     vim.api.nvim_set_hl(0, "NomralFloat", { bg = "none" })
 end
+
+MyColorScheme()
