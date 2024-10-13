@@ -31,3 +31,8 @@ require'lspconfig'.sqls.setup{
 	},
 --]]
 }
+
+require("fjes")
+require("fjes.colors")
+
+MyColorScheme("tokyonight-moon")
