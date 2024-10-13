@@ -1,0 +1,8 @@
+{
+  "gtags.vim": { "branch": "master", "commit": "6e40e1d2aa4615c142c62ec0c3c2abb57dd82318" },
+  "lazy.nvim": { "branch": "main", "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9" },
+  "nvim-lspconfig": { "branch": "master", "commit": "d141895d1d9f41048fff201d62a2d6e96d299e32" },
+  "nvim-treesitter": { "branch": "master", "commit": "5a2ff8b7ca5470b1011ed82ef3fdd53139ffc467" },
+  "tokyonight.nvim": { "branch": "main", "commit": "2c85fad417170d4572ead7bf9fdd706057bd73d7" },
+  "vim-fugitive": { "branch": "master", "commit": "d4877e54cef67f5af4f950935b1ade19ed6b7370" }
+}
