@@ -1,0 +1,17 @@
+I had the plugin symlinked to my Vim plugin
+
+lrwxr-xr-x  1 jes  staff  22 Oct 12 15:33 plugin -> /Users/jes/.vim/plugin
+
+Which then loaded these STY files automatically:
+
+total 72
+-rw-r--r--  1 jes  staff  2731 Feb 27  2024 armsty.vim
+-rw-r--r--  1 jes  staff  7404 Apr  6  2022 cscope_maps.vim
+-rw-r--r--  1 jes  staff  3077 Oct 21  2023 jssty.vim
+-rw-r--r--  1 jes  staff  2860 Feb 27  2024 kursty.vim
+-rw-r--r--  1 jes  staff  2786 Apr 26  2019 linuxsty.vim
+-rw-r--r--  1 jes  staff  2845 Feb 27  2024 pythonsty.vim
+-rw-r--r--  1 jes  staff  2829 Mar 12  2024 sncnsty.vim
+-rw-r--r--  1 jes  staff  2776 Feb 27  2024 tclsty.vim
+
+Was nice, but with Treesitter I don't really need these anymore, do I?

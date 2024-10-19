@@ -1,2 +1,2 @@
+require('fjes.colors')
 
-print("Hello from fjes")

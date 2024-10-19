@@ -3,11 +3,9 @@
 -- yet occupied by some coding style from my old .vim/
 
 function MyColorScheme(color)
-    color = color or "tokyonight"
+    color = color or "tokyonight-moon"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Nomral", { bg = "none" })
     vim.api.nvim_set_hl(0, "NomralFloat", { bg = "none" })
 end
-
-MyColorScheme()

@@ -24,9 +24,13 @@ return {
         -- eh other hand, if GTags works for me why do something about it?
         "ivechan/gtags.vim",
     },
-    {
-        "nvim-treesitter/nvim-treesitter",
-    },
     -- add telescope for fuzzy finding stuff?
-    -- add your plugins here
+    -- add your plugins here, or add another file in the same level.
+    {
+        "nvim-treesitter/playground",
+    },
+
+    -- harpoon to navigate open bufferes?
+    -- undotree
+    --
 }
