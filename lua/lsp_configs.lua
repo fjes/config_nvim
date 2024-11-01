@@ -17,7 +17,7 @@ require 'lspconfig'.clangd.setup{
 }
 
 -- Add lua-language-server
---require 'lspconfig'.lua_ls.setup{}
+require 'lspconfig'.lua_ls.setup{}
 
 -- Add SQL language server
 -- This is directly fetched form the README at https://github.com/sqls-server/sqls
