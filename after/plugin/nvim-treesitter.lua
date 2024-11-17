@@ -13,5 +13,6 @@ require'nvim-treesitter.configs'.setup {
         enable = true,
     },
 
+    -- See ':h nvim-treesitter-indentation-mod' for omre info.
     --indent = { enable = true, },
 }
