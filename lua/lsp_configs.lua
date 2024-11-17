@@ -17,7 +17,20 @@ require 'lspconfig'.clangd.setup{
 }
 
 -- Add lua-language-server
-require 'lspconfig'.lua_ls.setup{}
+require 'lspconfig'.lua_ls.setup{
+    on_init = function(client)
+        client.config.settings.lua = vimtbl_deep_extend('force', client.config.settings.lua, {
+            runtime = { version 'LuaJIT' },
+            workspace = {
+                checkThirdParty = false,
+                library = vim.api.nvim_get_runtime_file("", true)
+            }
+        })
+    end,
+    settings = {
+        Lua = {}
+    }
+}
 
 -- Add SQL language server
 -- This is directly fetched form the README at https://github.com/sqls-server/sqls
