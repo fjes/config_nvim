@@ -1,6 +1,6 @@
 local iron_config = {
-    repl_open_cmd = 'belowright 10 split',
     config = {
+        repl_open_cmd =  "belowright 10 split",
         -- Define your REPL commands here
         repl_definition = {
             python = {
@@ -23,7 +23,7 @@ local iron_config = {
             mark_visual = "<space>mc",
             remove_mark = "<space>md",
         },
-    }
+    },
 }
 
 require("iron.core").setup(iron_config)
