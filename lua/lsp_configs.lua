@@ -6,8 +6,8 @@
 require'lspconfig'.pylsp.setup{}
 
 -- configure the clangd
-require 'lspconfig'.clangd.setup{
-    filetypes = { "c", "cpp", "xc", "objc", "objcpp", "cuda", "proto" },
+require'lspconfig'.clangd.setup{
+    filetypes = { "c", "cpp", "xc", "objc", "objcpp", "cuda", "proto", },
     root_dir = function(fname)
         -- Find the roo directoy containing the configure.json file
         return lspconfig.util.root_pattern("compile_commands.json")(fname) or
@@ -17,18 +17,20 @@ require 'lspconfig'.clangd.setup{
 }
 
 -- Add lua-language-server
-require 'lspconfig'.lua_ls.setup{
-    on_init = function(client)
-        client.config.settings.lua = vimtbl_deep_extend('force', client.config.settings.lua, {
-            runtime = { version 'LuaJIT' },
+require('lspconfig').lua_ls.setup{
+    settings = {
+        Lua = {
+            runtime = {
+                version = 'LuaJIT',
+            },
+            diagnostics = {
+                globals = { 'vim' },
+            },
             workspace = {
                 checkThirdParty = false,
                 library = vim.api.nvim_get_runtime_file("", true)
-            }
-        })
-    end,
-    settings = {
-        Lua = {}
+            },
+        }
     }
 }
 
