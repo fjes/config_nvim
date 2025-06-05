@@ -2,6 +2,8 @@
 -- FIXME maybe put these in individaul files inside the fjes or plugin fodler?
 -- Or even the after folder?
 
+local lspconfig = require("lspconfig")
+
 -- configure the used language server
 require'lspconfig'.pylsp.setup{}
 
