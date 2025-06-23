@@ -16,3 +16,6 @@ vim.opt.incsearch = true
 
 -- Keep 8 lines from cursor to end of screen.
 vim.opt.scrolloff = 8
+
+-- add detection for traililng white spaces.
+vim.fn.matchadd('Substitute', '\\s\\+$')
