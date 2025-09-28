@@ -74,3 +74,8 @@ vim.lsp.config('spls', {
 })
 vim.lsp.enable('spls')
 
+-- JavaScript/TypeScript language server
+vim.lsp.config('ts_ls', {
+    filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" }
+})
+vim.lsp.enable('ts_ls')
